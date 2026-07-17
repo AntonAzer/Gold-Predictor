@@ -39,7 +39,7 @@ def load_live_data():
     except Exception as e:
         return None
 
-with St.spinner("Fetching live market data and updating the AI model..."):
+with st.spinner("Fetching live market data and updating the AI model..."):
     df_clean = load_live_data()
 
 # Check if data was loaded successfully
