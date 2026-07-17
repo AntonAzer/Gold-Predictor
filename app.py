@@ -67,7 +67,7 @@ def train_prophet_model(df):
 model = train_prophet_model(df_clean)
 
 # --- Step 3: User Date Input for Prediction ---
-st.subheader("📅 Predict Future Gold Price")
+st.subheader(" Predict Future Gold Price")
 min_date = datetime.date.today()
 max_date = min_date + datetime.timedelta(days=365) # Predict up to 1 year ahead
 
@@ -105,20 +105,20 @@ if days_to_predict >= 0:
         
         col1, col2 = st.columns(2)
         with col1:
-            st.metric(label="🏆 Gold 24K (per gram)", value=f"{price_24k:.2f} {currency_symbol}")
-            st.metric(label="✨ Gold 21K (per gram)", value=f"{price_21k:.2f} {currency_symbol}")
+            st.metric(label=" Gold 24K (per gram)", value=f"{price_24k:.2f} {currency_symbol}")
+            st.metric(label=" Gold 21K (per gram)", value=f"{price_21k:.2f} {currency_symbol}")
         with col2:
-            st.metric(label="🌟 Gold 22K (per gram)", value=f"{price_22k:.2f} {currency_symbol}")
-            st.metric(label="💍 Gold 18K (per gram)", value=f"{price_18k:.2f} {currency_symbol}")
+            st.metric(label=" Gold 22K (per gram)", value=f"{price_22k:.2f} {currency_symbol}")
+            st.metric(label=" Gold 18K (per gram)", value=f"{price_18k:.2f} {currency_symbol}")
             
-        st.info(f"💡 Based on a predicted Global Spot Price of **${predicted_ounce_usd:.2f} USD** per Troy Ounce.")
+        st.info(f" Based on a predicted Global Spot Price of **${predicted_ounce_usd:.2f} USD** per Troy Ounce.")
     else:
         st.error("Could not generate a prediction for this specific date. Please try another date.")
 
 # --- Disclaimer ---
 st.markdown("---")
 st.caption("""
-⚠️ **Financial Disclaimer:** This application is for educational and informational purposes only. 
+ **Financial Disclaimer:** This application is for educational and informational purposes only. 
 Gold markets are highly volatile and influenced by geopolitical events. 
 Do not use these predictions as absolute financial or investment advice.
 """)
