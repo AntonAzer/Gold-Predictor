@@ -1,6 +1,6 @@
 #  AI-Powered Gold Price Predictor
 
-An interactive, self-updating, and production-ready web application that leverages **Meta's Prophet AI model** to forecast global gold prices. The app automatically fetches live market data using the Yahoo Finance API, trains the machine learning model on-the-fly, and calculates the predicted prices for different gold karats (24K, 22K, 21K, and 18K) on any future date selected by the user.
+An interactive, self-updating, and production-ready web application that leverages **Meta's Prophet AI model** to forecast global gold prices. The app automatically fetches live market data using the Yahoo Finance API, trains the machine learning model on-the-fly, and calculates the predicted prices for different gold karats (24K, 22K, 21K, and 18K) on any future date selected by the users.
 
 ---
 
