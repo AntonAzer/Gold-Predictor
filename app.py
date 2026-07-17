@@ -7,7 +7,7 @@ import datetime
 # --- Page Configuration ---
 st.set_page_config(page_title="AI Gold Price Predictor", page_icon="🪙", layout="centered")
 
-st.title("🪙 AI-Powered Gold Price Predictor")
+st.title(" AI-Powered Gold Price Predictor")
 st.markdown("""
 This application uses **Meta's Prophet AI model** to forecast global gold prices. 
 It automatically fetches real-time market data, updates itself daily, and calculates prices for different gold karats.
@@ -45,7 +45,7 @@ with st.spinner("Fetching live market data and updating the AI model..."):
 # Check if data was loaded successfully
 if df_clean is None or len(df_clean) < 2:
     st.error("""
-    🚨 **Data Fetching Error:** 
+     **Data Fetching Error:** 
     Yahoo Finance is currently rate-limiting or blocking requests from this server's IP address. 
     
     *Please try refreshing the page in a few minutes. If you are running this locally, make sure you have an active internet connection.*
